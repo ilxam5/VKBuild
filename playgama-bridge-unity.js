@@ -33,13 +33,47 @@ function flushMessageQueue() {
     }
 }
 
+// Функции для кастомного экрана загрузки
+function updateCustomLoadingScreen(progress) {
+    const progressBar = document.getElementById('progress-bar')
+    const progressText = document.getElementById('progress-text')
+    
+    if (progressBar && progressText) {
+        const percent = Math.round(progress * 100)
+        progressBar.style.width = percent + '%'
+        progressText.textContent = percent + '%'
+    }
+}
+
+function hideCustomLoadingScreen() {
+    const loadingScreen = document.getElementById('custom-loading-screen')
+    if (loadingScreen) {
+        loadingScreen.classList.add('hidden')
+        // Удаляем элемент после анимации
+        setTimeout(() => {
+            if (loadingScreen.parentNode) {
+                loadingScreen.parentNode.removeChild(loadingScreen)
+            }
+        }, 500)
+    }
+}
+
 function onUnityLoadingProgressChanged(progress) {
+    // Обновляем кастомный экран загрузки
+    updateCustomLoadingScreen(progress)
+    
+    // Также обновляем bridge (если нужно)
+    if (typeof bridge !== 'undefined' && bridge.game) {
+        bridge.game.setLoadingProgress(progress * 100)
+    }
+    
     if (progress >= 1) {
         if (progressBarFillingInterval !== null) {
             clearInterval(progressBarFillingInterval)
             progressBarFillingInterval = null
         }
-        bridge.game.setLoadingProgress(100)
+        // Скрываем экран загрузки когда загрузка завершена
+        hideCustomLoadingScreen()
         return
     }
 
@@ -52,8 +86,6 @@ function onUnityLoadingProgressChanged(progress) {
         completeProgressBarFilling()
         return
     }
-
-    bridge.game.setLoadingProgress(progress * 100)
 }
 
 function completeProgressBarFilling() {
@@ -62,14 +94,18 @@ function completeProgressBarFilling() {
     }
 
     let currentPercent = 90
-    bridge.game.setLoadingProgress(currentPercent)
+    updateCustomLoadingScreen(0.9)
     progressBarFillingInterval = setInterval(() => {
         currentPercent++
         if (currentPercent > 99) {
             currentPercent = 99
         }
 
-        bridge.game.setLoadingProgress(currentPercent)
+        updateCustomLoadingScreen(currentPercent / 100)
+        
+        if (typeof bridge !== 'undefined' && bridge.game) {
+            bridge.game.setLoadingProgress(currentPercent)
+        }
 
         if (currentPercent >= 99) {
             clearInterval(progressBarFillingInterval)
@@ -126,7 +162,14 @@ function initializeBridge() {
     bridge
         .initialize()
         .then(() => {
-            bridge.game.setLoadingProgress(0)
+            // Инициализируем кастомный экран загрузки
+            updateCustomLoadingScreen(0)
+            
+            // Также обновляем bridge (если нужно)
+            if (typeof bridge !== 'undefined' && bridge.game) {
+                bridge.game.setLoadingProgress(0)
+            }
+            
             bridge.advertisement.on('banner_state_changed', state => sendMessageToUnity('OnBannerStateChanged', state))
             bridge.advertisement.on('interstitial_state_changed', state => sendMessageToUnity('OnInterstitialStateChanged', state))
             bridge.advertisement.on('rewarded_state_changed', state => sendMessageToUnity('OnRewardedStateChanged', state))
