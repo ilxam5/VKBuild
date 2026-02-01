@@ -1,9 +1,0 @@
-{
-  "static_path": ".",
-  "app_id": 52885310,
-  "endpoints": {
-    "mobile": "index.html",
-    "web": "index.html",
-    "mvk": "index.html"
-  }
-}

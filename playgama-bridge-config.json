@@ -1,19 +1,18 @@
 {
-  "$schema": "https://bridge.playgama.com/v1.27.0/schema.json",
-  "advertisement": {
-    "interstitial": {
-      "preloadOnStart": true
+    "$schema": "https://bridge.playgama.com/v1.27.0/schema.json",
+    "advertisement": {
+        "interstitial": {
+            "preloadOnStart": true
+        },
+        "rewarded": {
+            "preloadOnStart": true
+        },
+        "useBuiltInErrorPopup": true,
+        "backfillId": ""
     },
-    "rewarded": {
-      "preloadOnStart": true
-    },
-    "useBuiltInErrorPopup": true,
-    "backfillId": ""
-  },
-  "payments": [],
-  "leaderboards": [],
-  "sendAnalyticsEvents": false,
-  "disableLoadingLogo": true,
+    "payments": [],
+    "leaderboards": [],
+  "sendAnalyticsEvents": true,
   "device": {
     "supportedOrientations": [
       "landscape"
