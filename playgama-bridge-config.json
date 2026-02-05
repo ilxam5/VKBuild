@@ -1,7 +1,5 @@
 {
     "$schema": "https://bridge.playgama.com/v1.27.0/schema.json",
-    "disableLoadingLogo": true,
-    "showFullLoadingLogo": false,
     "advertisement": {
         "interstitial": {
             "preloadOnStart": true

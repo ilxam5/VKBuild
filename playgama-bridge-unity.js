@@ -33,47 +33,13 @@ function flushMessageQueue() {
     }
 }
 
-// Функции для кастомного экрана загрузки
-function updateCustomLoadingScreen(progress) {
-    const progressBar = document.getElementById('progress-bar')
-    const progressText = document.getElementById('progress-text')
-    
-    if (progressBar && progressText) {
-        const percent = Math.round(progress * 100)
-        progressBar.style.width = percent + '%'
-        progressText.textContent = percent + '%'
-    }
-}
-
-function hideCustomLoadingScreen() {
-    const loadingScreen = document.getElementById('custom-loading-screen')
-    if (loadingScreen) {
-        loadingScreen.classList.add('hidden')
-        // Удаляем элемент после анимации
-        setTimeout(() => {
-            if (loadingScreen.parentNode) {
-                loadingScreen.parentNode.removeChild(loadingScreen)
-            }
-        }, 500)
-    }
-}
-
 function onUnityLoadingProgressChanged(progress) {
-    // Обновляем кастомный экран загрузки
-    updateCustomLoadingScreen(progress)
-    
-    // Также обновляем bridge (если нужно)
-    if (typeof bridge !== 'undefined' && bridge.game) {
-        bridge.game.setLoadingProgress(progress * 100)
-    }
-    
     if (progress >= 1) {
         if (progressBarFillingInterval !== null) {
             clearInterval(progressBarFillingInterval)
             progressBarFillingInterval = null
         }
-        // Скрываем экран загрузки когда загрузка завершена
-        hideCustomLoadingScreen()
+        bridge.game.setLoadingProgress(100)
         return
     }
 
@@ -86,6 +52,8 @@ function onUnityLoadingProgressChanged(progress) {
         completeProgressBarFilling()
         return
     }
+
+    bridge.game.setLoadingProgress(progress * 100)
 }
 
 function completeProgressBarFilling() {
@@ -94,18 +62,14 @@ function completeProgressBarFilling() {
     }
 
     let currentPercent = 90
-    updateCustomLoadingScreen(0.9)
+    bridge.game.setLoadingProgress(currentPercent)
     progressBarFillingInterval = setInterval(() => {
         currentPercent++
         if (currentPercent > 99) {
             currentPercent = 99
         }
 
-        updateCustomLoadingScreen(currentPercent / 100)
-        
-        if (typeof bridge !== 'undefined' && bridge.game) {
-            bridge.game.setLoadingProgress(currentPercent)
-        }
+        bridge.game.setLoadingProgress(currentPercent)
 
         if (currentPercent >= 99) {
             clearInterval(progressBarFillingInterval)
@@ -162,14 +126,7 @@ function initializeBridge() {
     bridge
         .initialize()
         .then(() => {
-            // Инициализируем кастомный экран загрузки
-            updateCustomLoadingScreen(0)
-            
-            // Также обновляем bridge (если нужно)
-            if (typeof bridge !== 'undefined' && bridge.game) {
-                bridge.game.setLoadingProgress(0)
-            }
-            
+            bridge.game.setLoadingProgress(0)
             bridge.advertisement.on('banner_state_changed', state => sendMessageToUnity('OnBannerStateChanged', state))
             bridge.advertisement.on('interstitial_state_changed', state => sendMessageToUnity('OnInterstitialStateChanged', state))
             bridge.advertisement.on('rewarded_state_changed', state => sendMessageToUnity('OnRewardedStateChanged', state))
@@ -178,14 +135,14 @@ function initializeBridge() {
             bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
             let unityLoader = document.createElement('script')
-            unityLoader.src = 'Build/9a2b2b23d32f4628aa6d3d1b62b90d6b.loader.js'
+            unityLoader.src = 'Build/dab1004e86f625e6c5bfe253a8a1e4cd.loader.js'
             unityLoader.onload = () => {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/9d90044ac5b7be38b30aa0de60c4c404.data.unityweb',
-                        frameworkUrl: 'Build/8825cdf29dd95fc15c91e23cda94eedb.framework.js.unityweb',
-                        codeUrl: 'Build/f604468c687ff36c2fbca2b781c79f08.wasm.unityweb',
+                        dataUrl: 'Build/04d0f7c3135213152cb84950824b463d.data.unityweb',
+                        frameworkUrl: 'Build/443e59954607a941fe1af975ffb8160a.framework.js.unityweb',
+                        codeUrl: 'Build/298f06d4413c589e4b5acbc6a8dc4613.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
                         companyName: 'ILXAM',
                         productName: 'Unlim Racing',
