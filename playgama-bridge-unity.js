@@ -135,14 +135,14 @@ function initializeBridge() {
             bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
             let unityLoader = document.createElement('script')
-            unityLoader.src = 'Build/7251426895c1e1439cc8494a65c66d8e.loader.js'
+            unityLoader.src = 'Build/7761cd7ecf32f46650080b5100a92acc.loader.js'
             unityLoader.onload = () => {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/7226e6fd128521269186817ace339ea6.data.unityweb',
+                        dataUrl: 'Build/cd8de34476079c3e34a598d340631e81.data.unityweb',
                         frameworkUrl: 'Build/e76025ca947c2473263f4cceed5cb9cd.framework.js.unityweb',
-                        codeUrl: 'Build/193fcfeaaba62dcfbbe71431f6571d55.wasm.unityweb',
+                        codeUrl: 'Build/2e27bc62c6e66f7506f6c41a8d8d28fb.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
                         companyName: 'ILXAM',
                         productName: 'Unlim Racing',
