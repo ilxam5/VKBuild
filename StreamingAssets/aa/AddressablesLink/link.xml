@@ -93,6 +93,7 @@
     <type fullname="EmailPanel" preserve="all" />
     <type fullname="EmailPanelElement" preserve="all" />
     <type fullname="EmojiPanel" preserve="all" />
+    <type fullname="EnemyCarBotController" preserve="all" />
     <type fullname="EnemyCarController" preserve="all" />
     <type fullname="EnemySelectPanel" preserve="all" />
     <type fullname="ErrorPanelUI" preserve="all" />
@@ -279,9 +280,9 @@
   </assembly>
   <assembly fullname="Dreamteck.Splines, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Dreamteck.Splines.EdgeColliderGenerator" preserve="all" />
-    <type fullname="Dreamteck.Splines.RoadGenerator" preserve="all" />
     <type fullname="Dreamteck.Splines.SplineComputer" preserve="all" />
-    <type fullname="Dreamteck.Splines.RoadGenerator/VOffset" preserve="nothing" serialized="true" />
+    <type fullname="RoadGenerator" preserve="all" />
+    <type fullname="RoadGenerator/VOffset" preserve="nothing" serialized="true" />
     <type fullname="RoadPoints" preserve="nothing" serialized="true" />
     <type fullname="Dreamteck.Splines.ColorModifier" preserve="nothing" serialized="true" />
     <type fullname="Dreamteck.Splines.OffsetModifier" preserve="nothing" serialized="true" />
