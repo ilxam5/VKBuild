@@ -140,7 +140,7 @@ function initializeBridge() {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/3ffb3661da89d430f7482ee275b0e668.data.unityweb',
+                        dataUrl: 'Build/e36c9eb36fe87d50905d1ca76d593ce0.data.unityweb',
                         frameworkUrl: 'Build/da5be2e267be1ff46124bcde36a3f270.framework.js.unityweb',
                         codeUrl: 'Build/d1af83f8131fd9338dc52bf2c3f12df3.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
