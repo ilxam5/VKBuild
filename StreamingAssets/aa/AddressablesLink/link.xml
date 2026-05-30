@@ -21,6 +21,7 @@
     <type fullname="Car" preserve="all" />
     <type fullname="CarBody" preserve="all" />
     <type fullname="CarColors" preserve="all" />
+    <type fullname="CarContainerOpen" preserve="all" />
     <type fullname="CarDescription" preserve="all" />
     <type fullname="CarDescriptionUI" preserve="all" />
     <type fullname="CarDetailScriptable" preserve="all" />
@@ -38,6 +39,7 @@
     <type fullname="CarUiView" preserve="all" />
     <type fullname="CarVinyls" preserve="all" />
     <type fullname="CarWhells" preserve="all" />
+    <type fullname="ChatClanPanel" preserve="all" />
     <type fullname="ChatElement" preserve="all" />
     <type fullname="ChatMenu" preserve="all" />
     <type fullname="ChatMessageMenu" preserve="all" />
@@ -108,9 +110,9 @@
     <type fullname="GameManager" preserve="all" />
     <type fullname="GameSceneManager" preserve="all" />
     <type fullname="GameUIButton" preserve="all" />
-    <type fullname="GameUiCircle" preserve="all" />
     <type fullname="GameVinyls" preserve="all" />
     <type fullname="GearShiftModeSelectMenu" preserve="all" />
+    <type fullname="HUD2" preserve="all" />
     <type fullname="IncreaseAndDecreaseButtonsUi" preserve="all" />
     <type fullname="InfoPanel" preserve="all" />
     <type fullname="InventoryDetailDescriptionPanel" preserve="all" />
@@ -161,12 +163,18 @@
     <type fullname="RacingPassPanelQuests" preserve="all" />
     <type fullname="RacingPassRewardElement" preserve="all" />
     <type fullname="RacingPausePanel" preserve="all" />
+    <type fullname="RacingRatingView" preserve="all" />
     <type fullname="RacingUI" preserve="all" />
     <type fullname="RacingView" preserve="all" />
     <type fullname="RackSettingsPanel" preserve="all" />
     <type fullname="RadialLayoutCustom" preserve="all" />
-    <type fullname="RandomRoadGenerator" preserve="all" />
+    <type fullname="RatingCarClassPanel" preserve="all" />
+    <type fullname="RatingCarClassPanelElement" preserve="all" />
+    <type fullname="RatingCarPanel" preserve="all" />
     <type fullname="RatingPanel" preserve="all" />
+    <type fullname="RatingPlayersPanel" preserve="all" />
+    <type fullname="RatingPlayersPanelElement" preserve="all" />
+    <type fullname="RatingsSelectButtonsMenu" preserve="all" />
     <type fullname="RedDot" preserve="all" />
     <type fullname="RewardsListUi" preserve="all" />
     <type fullname="RewievPanel" preserve="all" />
@@ -180,6 +188,7 @@
     <type fullname="SaveConflictResolver" preserve="all" />
     <type fullname="SelectCarForExhibition" preserve="all" />
     <type fullname="SellCarPanel" preserve="all" />
+    <type fullname="SetsCarsDropRatePanel" preserve="all" />
     <type fullname="SettingsPanel" preserve="all" />
     <type fullname="ShopItem" preserve="all" />
     <type fullname="ShopMenu" preserve="all" />
@@ -221,6 +230,7 @@
     <type fullname="WeightDistribution" preserve="all" />
     <type fullname="WeightDistributionPanel" preserve="all" />
     <type fullname="Wheel" preserve="all" />
+    <type fullname="WheelGraph" preserve="all" />
     <type fullname="WheelSettingsPanel" preserve="all" />
     <type fullname="XanderDevelops.UI.CurvedText" preserve="all" />
     <type fullname="XsollaBridge" preserve="all" />
@@ -294,11 +304,6 @@
   </assembly>
   <assembly fullname="Unity.2D.Animation.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.U2D.Animation.SpriteSkin" preserve="all" />
-  </assembly>
-  <assembly fullname="Unity.2D.SpriteShape.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.U2D.SpriteShapeController" preserve="all" />
-    <type fullname="UnityEngine.U2D.Spline" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.U2D.SplineControlPoint" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
@@ -436,6 +441,7 @@
     <type fullname="UnityEngine.Mesh" preserve="all" />
     <type fullname="UnityEngine.MeshFilter" preserve="all" />
     <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.RenderSettings" preserve="all" />
@@ -477,9 +483,6 @@
   </assembly>
   <assembly fullname="UnityEngine.SpriteMaskModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.SpriteMask" preserve="all" />
-  </assembly>
-  <assembly fullname="UnityEngine.SpriteShapeModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.U2D.SpriteShapeRenderer" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Font" preserve="all" />
@@ -523,6 +526,7 @@
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Canvas" preserve="all" />
+    <type fullname="UnityEngine.CanvasGroup" preserve="all" />
     <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
   </assembly>
   <assembly fullname="UnityUIExtensions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
