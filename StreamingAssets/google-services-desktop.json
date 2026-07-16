@@ -14,28 +14,16 @@
       },
       "oauth_client": [
         {
-<<<<<<< HEAD
-=======
-          "client_id": "678004631613-e823oqt4re1bss8j6iav2urqm460a7nv.apps.googleusercontent.com",
-          "client_type": 3
-        },
-        {
->>>>>>> parent of 911c70a (1)
           "client_id": "678004631613-37aj5ltqon1lka38ojbavs7bjl4ds0cd.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.ILXAM.Racing",
-<<<<<<< HEAD
             "certificate_hash": "f69e44820543c8e284bec238a148455a040b7646"
           }
         },
         {
           "client_id": "678004631613-e823oqt4re1bss8j6iav2urqm460a7nv.apps.googleusercontent.com",
           "client_type": 3
-=======
-            "certificate_hash": "F6:9E:44:82:05:43:C8:E2:84:BE:C2:38:A1:48:45:5A:04:0B:76:46"
-          }
->>>>>>> parent of 911c70a (1)
         }
       ],
       "api_key": [
@@ -53,11 +41,7 @@
           ]
         }
       },
-<<<<<<< HEAD
       "admob_app_id": "ca-app-pub-6025982110079290~5919139848"
-=======
-      "admob_app_id": "ca-app-pub-1933591656142280~1703782060"
->>>>>>> parent of 911c70a (1)
     }
   ],
   "configuration_version": "1"
