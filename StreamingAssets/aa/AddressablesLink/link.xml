@@ -1,12 +1,13 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Achievements" preserve="all" />
+    <type fullname="AchievementsElement" preserve="all" />
     <type fullname="AdminPanel" preserve="all" />
     <type fullname="ADS" preserve="all" />
     <type fullname="AllTracks" preserve="all" />
     <type fullname="ApplicationsAndClanMemberList" preserve="all" />
     <type fullname="Autosalon" preserve="all" />
     <type fullname="Backgrounds" preserve="all" />
-    <type fullname="BlurCamera" preserve="all" />
     <type fullname="BonusRewardADS" preserve="all" />
     <type fullname="BorderPacksPanel" preserve="all" />
     <type fullname="BorderPanelElement" preserve="all" />
@@ -24,11 +25,11 @@
     <type fullname="CarContainerOpen" preserve="all" />
     <type fullname="CarDescription" preserve="all" />
     <type fullname="CarDescriptionUI" preserve="all" />
-    <type fullname="CarDetailScriptable" preserve="all" />
     <type fullname="CarEngine" preserve="all" />
     <type fullname="CarExhibitionViewPanel" preserve="all" />
     <type fullname="CarListElement" preserve="all" />
     <type fullname="CarParticles" preserve="all" />
+    <type fullname="CarParticlesPrefabs" preserve="all" />
     <type fullname="CarPositionInstaller" preserve="all" />
     <type fullname="Cars" preserve="all" />
     <type fullname="CarsExhibition" preserve="all" />
@@ -37,6 +38,7 @@
     <type fullname="CarSounds" preserve="all" />
     <type fullname="CarTracker" preserve="all" />
     <type fullname="CarUiView" preserve="all" />
+    <type fullname="CarViewCamera" preserve="all" />
     <type fullname="CarVinyls" preserve="all" />
     <type fullname="CarWhells" preserve="all" />
     <type fullname="ChatClanPanel" preserve="all" />
@@ -64,6 +66,7 @@
     <type fullname="ColorBasket" preserve="all" />
     <type fullname="ColorBasketElement" preserve="all" />
     <type fullname="ColorMenu" preserve="all" />
+    <type fullname="ColorPrefabVinyls" preserve="all" />
     <type fullname="CustomToggle" preserve="all" />
     <type fullname="DailyRewardPanelElement" preserve="all" />
     <type fullname="DailyRewards" preserve="all" />
@@ -97,6 +100,7 @@
     <type fullname="EmojiPanel" preserve="all" />
     <type fullname="EnemyCarBotController" preserve="all" />
     <type fullname="EnemyCarController" preserve="all" />
+    <type fullname="EnemySelectCamera" preserve="all" />
     <type fullname="EnemySelectPanel" preserve="all" />
     <type fullname="ErrorPanelUI" preserve="all" />
     <type fullname="EventScriptable" preserve="all" />
@@ -104,14 +108,19 @@
     <type fullname="ExitWithoutSavePanel" preserve="all" />
     <type fullname="FastShop" preserve="all" />
     <type fullname="FinishPanel" preserve="all" />
+    <type fullname="FirstScene" preserve="all" />
+    <type fullname="FirstSceneLifetameScope" preserve="all" />
     <type fullname="FortuneWheel" preserve="all" />
+    <type fullname="FpsCounter" preserve="all" />
     <type fullname="GameColors" preserve="all" />
     <type fullname="GameItems" preserve="all" />
     <type fullname="GameManager" preserve="all" />
     <type fullname="GameSceneManager" preserve="all" />
+    <type fullname="GameSettings" preserve="all" />
     <type fullname="GameUIButton" preserve="all" />
     <type fullname="GameVinyls" preserve="all" />
     <type fullname="GearShiftModeSelectMenu" preserve="all" />
+    <type fullname="GlobalSounds" preserve="all" />
     <type fullname="HUD2" preserve="all" />
     <type fullname="IncreaseAndDecreaseButtonsUi" preserve="all" />
     <type fullname="InfoPanel" preserve="all" />
@@ -137,6 +146,7 @@
     <type fullname="MenuTransitionScreen" preserve="all" />
     <type fullname="MiniTrafficLighterUi" preserve="all" />
     <type fullname="MissionsMenu" preserve="all" />
+    <type fullname="MissionsMenuButtons" preserve="all" />
     <type fullname="MultiplayerCarController" preserve="all" />
     <type fullname="MultiplayerCreateNewLobbyPanel" preserve="all" />
     <type fullname="MultiplayerFinishPanel" preserve="all" />
@@ -182,10 +192,11 @@
     <type fullname="RoadReward" preserve="all" />
     <type fullname="RoadRewardSpawner" preserve="all" />
     <type fullname="RoadRewardTrigger" preserve="all" />
+    <type fullname="RoadsItemsContainer" preserve="all" />
     <type fullname="RoadTreeSpawner" preserve="all" />
     <type fullname="RotateSircleUi" preserve="all" />
-    <type fullname="Santa" preserve="all" />
     <type fullname="SaveConflictResolver" preserve="all" />
+    <type fullname="SceneLifetameScope" preserve="all" />
     <type fullname="SelectCarForExhibition" preserve="all" />
     <type fullname="SellCarPanel" preserve="all" />
     <type fullname="SetsCarsDropRatePanel" preserve="all" />
@@ -194,6 +205,7 @@
     <type fullname="ShopMenu" preserve="all" />
     <type fullname="ShopSetElement" preserve="all" />
     <type fullname="SliderWithButtons" preserve="all" />
+    <type fullname="SparkParticlePol" preserve="all" />
     <type fullname="SpecialRewardPanel" preserve="all" />
     <type fullname="SpriteRendererAddressable" preserve="all" />
     <type fullname="SuspensionPanel" preserve="all" />
@@ -208,6 +220,7 @@
     <type fullname="TriggerEnterCollback" preserve="all" />
     <type fullname="TuningMenu" preserve="all" />
     <type fullname="Tutorial" preserve="all" />
+    <type fullname="TutorialButtonNumber" preserve="all" />
     <type fullname="UIObjectFadeAnimation" preserve="all" />
     <type fullname="UiObjectMoveAnim" preserve="all" />
     <type fullname="UIObjectScaleAnim" preserve="all" />
@@ -218,7 +231,6 @@
     <type fullname="UpperPanel" preserve="all" />
     <type fullname="VinylBasket" preserve="all" />
     <type fullname="VinylBasketElement" preserve="all" />
-    <type fullname="VinylBuster" preserve="all" />
     <type fullname="VinylColorButtons" preserve="all" />
     <type fullname="VinylControllHandler" preserve="all" />
     <type fullname="VinylControllToggles" preserve="all" />
@@ -227,6 +239,7 @@
     <type fullname="VinylMoveButtons" preserve="all" />
     <type fullname="VinylScaleButtons" preserve="all" />
     <type fullname="VinylsInventory" preserve="all" />
+    <type fullname="VKBridgeManager" preserve="all" />
     <type fullname="WeightDistribution" preserve="all" />
     <type fullname="WeightDistributionPanel" preserve="all" />
     <type fullname="Wheel" preserve="all" />
@@ -240,33 +253,27 @@
     <type fullname="RewardSpawnPatern" preserve="nothing" serialized="true" />
     <type fullname="RacingReward" preserve="nothing" serialized="true" />
     <type fullname="RewardParam" preserve="nothing" serialized="true" />
+    <type fullname="CarDetail" preserve="nothing" serialized="true" />
+    <type fullname="ImageColor" preserve="nothing" serialized="true" />
     <type fullname="Account" preserve="nothing" serialized="true" />
+    <type fullname="AchievementData" preserve="nothing" serialized="true" />
     <type fullname="BackgroundItem" preserve="nothing" serialized="true" />
     <type fullname="BodyDetail" preserve="nothing" serialized="true" />
     <type fullname="BodySpriteLoad" preserve="nothing" serialized="true" />
     <type fullname="CarControllButton" preserve="nothing" serialized="true" />
-    <type fullname="CarDetail" preserve="nothing" serialized="true" />
     <type fullname="CarDetailColor" preserve="nothing" serialized="true" />
-    <type fullname="ChatElementData" preserve="nothing" serialized="true" />
-    <type fullname="Clan" preserve="nothing" serialized="true" />
-    <type fullname="ClanApplicationData" preserve="nothing" serialized="true" />
-    <type fullname="ClanLevelUpgradePanel" preserve="nothing" serialized="true" />
     <type fullname="ClanShortData" preserve="nothing" serialized="true" />
     <type fullname="ClanTerritory" preserve="nothing" serialized="true" />
     <type fullname="Client" preserve="nothing" serialized="true" />
-    <type fullname="DepozitPanel" preserve="nothing" serialized="true" />
     <type fullname="DetailDescription" preserve="nothing" serialized="true" />
     <type fullname="DetailMaxParametrs" preserve="nothing" serialized="true" />
-    <type fullname="DetailMenuBoxUpgradePos" preserve="nothing" serialized="true" />
     <type fullname="DirtParticleColors" preserve="nothing" serialized="true" />
     <type fullname="DotName" preserve="nothing" serialized="true" />
     <type fullname="Email" preserve="nothing" serialized="true" />
     <type fullname="EngineParams" preserve="nothing" serialized="true" />
     <type fullname="FinishResults" preserve="nothing" serialized="true" />
     <type fullname="GameItem" preserve="nothing" serialized="true" />
-    <type fullname="ImageColor" preserve="nothing" serialized="true" />
     <type fullname="LeagueRewards" preserve="nothing" serialized="true" />
-    <type fullname="NameChangePanel" preserve="nothing" serialized="true" />
     <type fullname="Neon" preserve="nothing" serialized="true" />
     <type fullname="NetworkVariable`1" preserve="nothing" serialized="true" />
     <type fullname="SaveConflictResolverElement" preserve="nothing" serialized="true" />
@@ -279,10 +286,18 @@
     <type fullname="VinylsPack" preserve="nothing" serialized="true" />
     <type fullname="VirtualCar" preserve="nothing" serialized="true" />
     <type fullname="WheelDisk" preserve="nothing" serialized="true" />
-    <type fullname="YG.Utils.Pay.Purchase" preserve="nothing" serialized="true" />
+    <type fullname="Clan" preserve="nothing" serialized="true" />
+    <type fullname="ClanApplicationData" preserve="nothing" serialized="true" />
+    <type fullname="ClanLevelUpgradePanel" preserve="nothing" serialized="true" />
+    <type fullname="DepozitPanel" preserve="nothing" serialized="true" />
+    <type fullname="NameChangePanel" preserve="nothing" serialized="true" />
     <type fullname="QuaternionJson" preserve="nothing" serialized="true" />
     <type fullname="TrackResult" preserve="nothing" serialized="true" />
     <type fullname="Vinyl" preserve="nothing" serialized="true" />
+    <type fullname="YG.Utils.Pay.Purchase" preserve="nothing" serialized="true" />
+    <type fullname="DetailMenuBoxUpgradePos" preserve="nothing" serialized="true" />
+    <type fullname="ChatElementData" preserve="nothing" serialized="true" />
+    <type fullname="RoadParticlePoolData" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Coffee.UnmaskForUGUI, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Coffee.UIExtensions.Unmask" preserve="all" />
@@ -307,6 +322,8 @@
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+    <type fullname="UnityEngine.AddressableAssets.AssetReference" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.AddressableAssets.AssetReferenceGameObject" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.AddressableAssets.AssetReferenceSprite" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.AddressableAssets.AssetReferenceT`1" preserve="nothing" serialized="true" />
   </assembly>
@@ -334,48 +351,15 @@
     <type fullname="UnityEngine.Localization.Metadata.AssetTypeMetadata" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.Tables.DistributedUIDGenerator" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.Tables.SharedTableData/SharedTableEntry" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Localization.Events.UnityEventSprite" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.Events.UnityEventString" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Localization.LocalizedSprite" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.LocalizedString" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Tables.TableEntryReference" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Tables.TableReference" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Events.UnityEventSprite" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.LocalizedSprite" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.SmartFormat.PersistentVariables.ObjectVariable" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.SmartFormat.PersistentVariables.StringVariable" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.SmartFormat.PersistentVariables.VariableNameValuePair" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Localization.Tables.TableEntryReference" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Localization.Tables.TableReference" preserve="nothing" serialized="true" />
-  </assembly>
-  <assembly fullname="Unity.Postprocessing.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.Rendering.PostProcessing.ColorGrading" preserve="all" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.DepthOfField" preserve="all" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.MotionBlur" preserve="all" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.PostProcessLayer" preserve="all" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.PostProcessProfile" preserve="all" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.PostProcessResources" preserve="all" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.PostProcessVolume" preserve="all" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.BoolParameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.ColorParameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.FloatParameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.GradingModeParameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.KernelSizeParameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.Spline" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.SplineParameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.TextureParameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.TonemapperParameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.Vector4Parameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.FastApproximateAntialiasing" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.Fog" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.HistogramMonitor" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.IntParameter" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.LightMeterMonitor" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.PostProcessDebugLayer" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.PostProcessDebugLayer/OverlaySettings" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.PostProcessResources/ComputeShaders" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.PostProcessResources/SMAALuts" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.PostProcessResources/Shaders" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.SubpixelMorphologicalAntialiasing" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.TemporalAntialiasing" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.VectorscopeMonitor" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Rendering.PostProcessing.WaveformMonitor" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
@@ -394,9 +378,6 @@
     <type fullname="TMPro.TMP_SpriteAsset" preserve="all" />
     <type fullname="TMPro.TMP_StyleSheet" preserve="all" />
     <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_Dropdown/DropdownEvent" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_Dropdown/OptionData" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_Dropdown/OptionDataList" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/OnChangeEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/SelectionEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_InputField/SubmitEvent" preserve="nothing" serialized="true" />
@@ -404,7 +385,6 @@
     <type fullname="TMPro.TMP_InputField/TouchScreenKeyboardEvent" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_SpriteCharacter" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_SpriteGlyph" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_Style" preserve="nothing" serialized="true" />
     <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
     <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
     <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
@@ -412,6 +392,10 @@
     <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Dropdown/DropdownEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Dropdown/OptionData" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Dropdown/OptionDataList" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Style" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEditor.Audio.AudioMixerSnapshotController" preserve="all" />
@@ -419,7 +403,6 @@
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
     <type fullname="UnityEngine.Animator" preserve="all" />
-    <type fullname="UnityEngine.Avatar" preserve="all" />
     <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -431,7 +414,6 @@
   </assembly>
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Camera" preserve="all" />
-    <type fullname="UnityEngine.ComputeShader" preserve="all" />
     <type fullname="UnityEngine.Cubemap" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.Light" preserve="all" />
@@ -445,22 +427,28 @@
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.RenderSettings" preserve="all" />
-    <type fullname="UnityEngine.RenderTexture" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
-    <type fullname="UnityEngine.SkinnedMeshRenderer" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.TrailRenderer" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
+    <type fullname="UnityEngine.LayerMask" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Vector2" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Color" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Vector3" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Color32" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Vector4" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Events.UnityEvent`1" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Vector2" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Bounds" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`1" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Rect" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Vector2Int" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.ParticleSystem" preserve="all" />
@@ -470,16 +458,11 @@
     <type fullname="UnityEngine.BoxCollider2D" preserve="all" />
     <type fullname="UnityEngine.CircleCollider2D" preserve="all" />
     <type fullname="UnityEngine.EdgeCollider2D" preserve="all" />
-    <type fullname="UnityEngine.HingeJoint2D" preserve="all" />
     <type fullname="UnityEngine.PhysicsMaterial2D" preserve="all" />
     <type fullname="UnityEngine.PolygonCollider2D" preserve="all" />
-    <type fullname="UnityEngine.RelativeJoint2D" preserve="all" />
     <type fullname="UnityEngine.Rigidbody2D" preserve="all" />
     <type fullname="UnityEngine.WheelJoint2D" preserve="all" />
     <type fullname="UnityEngine.ContactFilter2D" preserve="nothing" serialized="true" />
-  </assembly>
-  <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="UnityEngine.MeshCollider" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.SpriteMaskModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.SpriteMask" preserve="all" />
@@ -511,17 +494,17 @@
     <type fullname="UnityEngine.UI.ToggleGroup" preserve="all" />
     <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.EventSystems.EventTrigger/Entry" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.EventSystems.EventTrigger/TriggerEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.EventSystems.EventTrigger/Entry" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.EventSystems.EventTrigger/TriggerEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Toggle/ToggleEvent" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -542,5 +525,8 @@
     <type fullname="UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.TextCore.LowLevel.GlyphValueRecord" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="VContainer">
+    <type fullname="VContainer.Unity.ParentReference" preserve="nothing" serialized="true" />
   </assembly>
 </linker>
