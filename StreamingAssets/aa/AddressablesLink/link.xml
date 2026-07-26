@@ -213,6 +213,7 @@
     <type fullname="TestDriveRatingPanel" preserve="all" />
     <type fullname="TestDriveRewardsPanel" preserve="all" />
     <type fullname="TestDriveView" preserve="all" />
+    <type fullname="TouchBlock" preserve="all" />
     <type fullname="Track" preserve="all" />
     <type fullname="TrackController" preserve="all" />
     <type fullname="TrafficLighter" preserve="all" />
@@ -286,6 +287,7 @@
     <type fullname="VinylsPack" preserve="nothing" serialized="true" />
     <type fullname="VirtualCar" preserve="nothing" serialized="true" />
     <type fullname="WheelDisk" preserve="nothing" serialized="true" />
+    <type fullname="YG.Utils.Pay.Purchase" preserve="nothing" serialized="true" />
     <type fullname="Clan" preserve="nothing" serialized="true" />
     <type fullname="ClanApplicationData" preserve="nothing" serialized="true" />
     <type fullname="ClanLevelUpgradePanel" preserve="nothing" serialized="true" />
@@ -294,7 +296,6 @@
     <type fullname="QuaternionJson" preserve="nothing" serialized="true" />
     <type fullname="TrackResult" preserve="nothing" serialized="true" />
     <type fullname="Vinyl" preserve="nothing" serialized="true" />
-    <type fullname="YG.Utils.Pay.Purchase" preserve="nothing" serialized="true" />
     <type fullname="DetailMenuBoxUpgradePos" preserve="nothing" serialized="true" />
     <type fullname="ChatElementData" preserve="nothing" serialized="true" />
     <type fullname="RoadParticlePoolData" preserve="nothing" serialized="true" />
