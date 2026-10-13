@@ -135,18 +135,18 @@ function initializeBridge() {
             bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
             let unityLoader = document.createElement('script')
-            unityLoader.src = 'Build/10dc3e3980125d7cf5c2d74645a783b6.loader.js'
+            unityLoader.src = 'Build/9e007facca275dc80e568e184614d0b0.loader.js'
             unityLoader.onload = () => {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/11227aab0fa3ec8bf274fd106cb0c5d9.data.unityweb',
-                        frameworkUrl: 'Build/cb26439d45241656d69ad19fbf7f994b.framework.js.unityweb',
-                        codeUrl: 'Build/beea8ff29d5e907afa28f55c9870ca1d.wasm.unityweb',
+                        dataUrl: 'Build/0397898a377cfba0b3942a460b99de23.data.unityweb',
+                        frameworkUrl: 'Build/781374c042387b278cdceb7f0d07cfc7.framework.js.unityweb',
+                        codeUrl: 'Build/80497ad33dc90928d62f4e2a96e1ca0e.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
                         companyName: 'ILXAM',
                         productName: 'Unlim Racing',
-                        productVersion: '78',
+                        productVersion: '80',
                         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
                     },
